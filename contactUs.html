@@ -97,70 +97,75 @@
         </div>
     </footer>
 	
-	<script>
-		window.onload = function() {
-			try {
-				var searchIcon = document.querySelector(".search-box-icon");
-				var searchInput = document.querySelector(".input");
+<script>
+	window.onload = function() {
+		try {
+			var searchIcon = document.querySelector(".search-box-icon");
+			var searchInput = document.querySelector(".input");
 
-				if (searchIcon && searchInput) {
-					searchIcon.addEventListener("click", function(event) {
-						event.preventDefault();
-						var searchQuery = searchInput.value.trim().toLowerCase();
-						console.log("Search query:", searchQuery);
+			if (searchIcon && searchInput) {
+				searchIcon.addEventListener("click", function(event) {
+					event.preventDefault();
+					var searchQuery = searchInput.value.trim().toLowerCase();
+					console.log("Search query:", searchQuery);
 
-						var searchTerms = searchQuery.split(' ');
-						var productName = searchTerms[0];
-						var productColor = searchTerms.slice(1).join(' ');
+					var searchTerms = searchQuery.split(' ');
+					var productName = searchTerms[0];
+					var productColor = searchTerms.slice(1).join(' ');
 
-						switch (productName) {
-							case "home":
-								window.location.href = "home.html";
-								break;
-							case "product":
-								window.location.href = "product.html";
-								break;
-							case "about us":
-								window.location.href = "aboutUs.html";
-								break;
-							case "about":
-								window.location.href = "aboutUs.html";
-								break;									
-							case "contact us":
-								window.location.href = "contactUs.html";
-								break;
-							case "contact":
-								window.location.href = "contactUs.html";
-								break;
-							case "location":
-								window.location.href = "contactUs.html#l";
-								break;									
-							case "product":
-								window.location.href = "product.html";
-								break;								
-							case "victorinox":
-								window.location.href = "product.html#V";
-								break;
-							case "technomarine":
-								window.location.href = "product.html#M";
-								break;
-							case "apple":
-								window.location.href = "product.html#A";
-								break;
-							case "tag":
-								window.location.href = "product.html#T";
-								break;							
-							default:
-								alert("No matching page found for the search query.");
-						}
-					});
-				} else {
-					console.error("Search icon or input not found.");
-				}
-			} catch (error) {
-				console.error("An error occurred:", error);
+					switch (productName) {
+						case "home":
+							window.location.href = "home.html";
+							break;
+						case "about":
+						case "about us":
+							window.location.href = "aboutUs.html";
+							break;
+						case "contact":
+						case "contact us":
+							window.location.href = "contactUs.html";
+							break;
+						case "location":
+							window.location.href = "contactUs.html#l";
+							break;
+						case "product":
+							window.location.href = "product.html";
+							break;
+						case "victorinox":
+							window.location.href = "product.html#V";
+							break;
+						case "technomarine":
+							window.location.href = "product.html#M";
+							break;
+						case "apple":
+							window.location.href = "product.html#A";
+							break;
+						case "tag":
+							window.location.href = "product.html#T";
+							break;
+						default:
+							alert("No matching page found for the search query.");
+					}
+				});
+			} else {
+				console.error("Search icon or input not found.");
 			}
-		};
-	</script>
+
+			var form = document.querySelector("form");
+			if (form) {
+				form.addEventListener('submit', function(event) {
+					event.preventDefault();
+					alert('Thank you for your inquiry! We will reach out to you soon.');
+					// Clear the form after submission
+					form.reset();
+				});
+			} else {
+				console.error("Form not found.");
+			}
+		} catch (error) {
+			console.error("An error occurred:", error);
+		}
+	};
+</script>
 </body>
 </html>
