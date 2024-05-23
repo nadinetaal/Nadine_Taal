@@ -483,7 +483,7 @@ h3 {
   transition: all .3s cubic-bezier(.6,.4,0,1);
   z-index: 1;
   font-family: verdana;
-  font-size: 40px;
+  font-size: 30px;
   background: #5d5357; /* Added background color */
 }
 
