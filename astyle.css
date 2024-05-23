@@ -1,0 +1,528 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+	color:white;
+    height:100vh;
+    background-image: url(pastel.gif);	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+	font-family: calibri; 
+	padding-right: 18px;
+	padding-left: 18px;
+}
+.navdiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+img{
+	display: flex;
+	height: 110px;
+    width: 150px;
+	padding-left: 40px;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+li a{
+	color: #5d5357;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 40px;
+	margin-left: 40px;
+	text-decoration: none;
+}
+li a:hover{
+	color: rgb(217,189,186)
+}
+video {
+	align-items: center;
+    max-width: 720px;
+    border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 40px;
+	padding-right: 300px;
+	padding-left: 300px;
+}
+.heading{
+	text-align: center;
+	font-size: 30px;
+	color: #5d5357;
+	padding: 9px;
+	margin: 3px;
+	font-weight: bold;	
+}
+.content {
+    margin: 50;
+    padding: 50;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Ensure the content is stacked vertically */
+    align-items: center; /* Center the content horizontally */
+	text-align: center;
+	margin-bottom: 20px;
+}
+.content p {
+    font-size: 13px;
+    font-family: Arial;
+    color: #5d5357;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #e9d9d7; /* Set your desired background color */
+    padding: 10px; /* Add padding for better readability */
+	padding-left:250px;
+	padding-right:250px;
+}
+.about-us {
+    font-weight: bold;
+    text-align: justify;
+    color: #5d5357;
+    padding: 80px;
+    margin: -100px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+	font-size:17px;
+	font-family: calibri;
+    margin: 0 auto; 
+    margin-top: -45px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #cf9893;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    line-height: 1.6;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+.text {
+    font-family: calibri;
+    font-size: 18px;
+    color: #5d5357;
+    margin: 0 auto; /* Center the div horizontally */
+    text-align: center;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.text p {
+    font-weight: bold;
+    text-align: center;
+    color: #5d5357;
+    padding: 20px;
+    background: #d8c6c4;
+}
+
+.founder-image {
+    border-radius: 50%; /* This will make the image circular */
+    width: 130px; /* Adjust the width and height as needed */
+    height: 130px;
+    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+    opacity: 0.9; /* Adjust the opacity value (0 to 1) */
+    margin-right: 20px; /* Add some spacing between the image and text */
+}
+
+hr{
+	margin-top: 4px;
+	width:100%;
+	border-width: 2px; 
+    border-color: #5d5357;
+	margin-bottom: 5px;
+}
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: -30%;
+ 
+}
+
+aside .image img {
+    max-width: 100%; /* Ensures the image will not overflow the parent container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes bottom spacing around the image */
+	margin-left: -3%;
+}
+
+aside .image img {
+    width: 500%; /* Example width, adjust as needed */
+    height: auto; /* Maintains the aspect ratio */
+	margin-left: -3.4%;
+}
+
+.search {
+  --input-line: #5d5357;
+  --input-text-color: #e5dfdf;
+  --input-text-hover-color: transparent;
+  --input-border-color: #e5dfdf;
+  --input-border-hover-color: #999999;
+  --input-bg-color: #5d5357;
+  --search-max-width: 200px; 
+  --search-min-width: 100px; 
+  --border-radius: 5px;
+  --transition-cubic-bezier: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-box {
+  max-width: var(--search-max-width);
+  min-width: var(--search-min-width);
+  height: 18px; /* Adjusted */
+  border: 1px solid var(#ddbab6);
+  border-radius: var(--border-radius);
+  padding: 5px 10px; /* Adjusted */
+  background: #ddbab6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Adjusted */
+  transition: var(--transition-cubic-bezier);
+}
+
+.search-box:hover {
+  border-color: var(--input-border-hover-color);
+}
+
+/*Section input*/
+.search-field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  border: 0;
+}
+
+.input {
+  width: calc(100% - 29px);
+  height: 100%;
+  border: 0;
+  border-color: transparent;
+  font-size: 1rem;
+  padding-right: 0px;
+  color: var(--input-line);
+  background: #ddbab6;
+  border-right: 2px solid var(--input-border-color);
+  outline: none;
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-moz-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-ms-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input:focus::-webkit-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-moz-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-ms-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+/*Search button*/
+.search-box-icon {
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+}
+.search-box-icon:hover {
+  background: #5d5357;
+}
+
+.btn-icon-content {
+  width: 52px;
+  height: 35px;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+  opacity: .4;
+}
+
+.btn-icon-content:hover {
+  opacity: .8;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+/* CART */
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -6px; 
+    left: 15px;
+    background-color: #ddbab6;
+    color: #5d5357;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+    background: #343434;
+    padding-top: 50px;
+    color: white; /* Ensure text color is white */
+}
+
+.fcontainer {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 33.3%;
+    text-align: center; /* Center the content within each section */
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.footer-content ul {
+    text-align: center;
+    padding: 0; /* Ensure no padding on the ul */
+    list-style: none; /* Remove default list styles */
+}
+
+.list {
+    padding: 0;		
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #cd8585;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons img {
+    text-align: center;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-bar {
+    background: #9d8686;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+.list li a {
+    color: white; /* Change link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.list li a:hover {
+    color: #cd8585; /* Change link color on hover */
+}
+/* Card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+.card {
+  --bg: #f7f7f8;
+  --hover-bg: #e6d0d0;
+  --hover-text: #E50087;
+  width: 100%; /* Set width to 100% */
+  max-width: 200ch;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s cubic-bezier(.6,.4,0,1), transform .15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: #5d5357;
+  margin-top: -30%;
+
+}
+
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.card > :not(span) {
+  transition: .3s cubic-bezier(.6,.4,0,1);
+}
+
+.card > strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -.035em;
+  color: #5d5357;
+}
+
+.card span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f9e6e6; /* Changed color here */
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all .3s cubic-bezier(.6,.4,0,1);
+  z-index: 1;
+  font-family: Calibri, sans-serif;
+  font-size: 30px;
+  background: #5d5357; /* Added background color */
+}
+
+.card:hover span {
+  top: 100%;
+  font-size: 1.2em;
+  opacity: 0;
+}
+
+.card:hover {
+  background: var(--hover-bg);
+}
+
+.card:hover > div,
+.card:hover > strong {
+  opacity: 1;
+}
+
+.card > div,
+.card > strong {
+  opacity: 0;
+  transition: opacity .3s cubic-bezier(.6,.4,0,1);
+}
+
+.icon img {
+  height: 70px; 
+  width: 70px;  
+  border-radius: 80%; 
+  opacity: 0.9;
+}
+.contact-link {
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+  color: #5d5357;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: white; /* Change hover color */
+}

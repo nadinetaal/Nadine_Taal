@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet"href="style.css">
+	<title>E-commerce Webpage</title>
+</head>
+<body>
+	<header class="header">
+		 <a href="#"class="logo">
+			<img src="logo1.png" alt="Logo">
+		</a>
+		<nav class="navbar">
+			<a href="home.html" class="nav-link">Home</a>
+			<a href="product.html" class="nav-link">Product</a>
+			<a href="aboutUs.html" class="nav-link">About Us</a>
+			<a href="contactUs.html" class="nav-link">Contact Us</a>
+		</nav>
+	</header>
+	
+	<div class="content">
+		<div class="text-container">
+			<h4>AquaWear Timepieces:<br>Where Style Meets Resilience</h4>
+			<div class="audio-container wave-menu" onclick="toggleAudio()">
+				<audio id="myAudio" src="watch.mp3" type="audio/mpeg" autoplay></audio>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>&copy; AquaWear. All rights reserved.</p>
+	</footer>
+
+	<script>
+        const audio = document.getElementById('myAudio');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+        const volumeSlider = document.getElementById('volumeSlider');
+
+        playButton.addEventListener('click', () => {
+            audio.play();
+        });
+
+        pauseButton.addEventListener('click', () => {
+            audio.pause();
+        });
+
+        volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value;
+        });
+
+        audio.addEventListener('play', () => {
+            volumeSlider.value = audio.volume;
+        });
+
+        function toggleAudio() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+	
+</body>
+</html>
+
+
+	
+
+

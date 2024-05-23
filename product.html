@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pstyle.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="AquaWear">
+                </a>
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <div class="search">
+                <div class="search-box">
+                    <div class="search-field">
+                        <input placeholder="Search..." class="input" type="text">
+                        <div class="search-box-icon">
+                            <button class="btn-icon-content">
+                                <i class="search-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" fill="#fff"></path></svg>
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+	<div class="cart-icon">
+			<a href="#"><img src="C.png" alt="Shopping Cart"></a>
+			<span class="cart-icon-count">0</span>
+		</div>
+	</nav>
+
+	<div class="sidebar" id="sidebar">
+		<button class="sidebar-close">
+			<i class="fa-solid fa-close"></i>
+		</button>
+		<div class="sidebar-content">
+			<div class="cart">
+				<h3>My Cart</h3>
+				<div class="cart-items">
+				
+				</div>
+			</div>
+		</div>
+		<div class="sidebar-footer">
+			<div class="total-amount">
+				<h5> </h5>
+				<div class="cart-total">₱0.00</div>
+			</div>
+			<a href="ordersum.html"><button class="checkout-btn">Checkout</button></a>
+		</div>
+	</div>
+	
+    <hr>
+	
+    <h1 id="V"><center>Victorinox Swiss Army Women’s I.N.O.X.</center></h1>
+    <div class="product-container">
+        <div class="card">
+            <div class="card-img">
+                <img src="V1.png" class="img" alt="Victorinox Swiss Army Women’s I.N.O.X.">
+            </div>
+            <div class="card-title">Victorinox Swiss Army Women’s I.N.O.X.</div>
+            <div class="card-subtitle">Color: Black</div>
+            <hr class="card-divider">
+            <div class="card-footer">
+                <div class="card-price"><span>₱</span>27,333.87</div>
+					<button class="button add-to-cart" type="button" data-name="Victorinox Swiss Army Women’s I.N.O.X." data-price="₱27,333.87">
+						<span class="button__text">Add Item</span>
+						<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+					</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+            </div>
+        </div>
+
+	  <div class="card">
+		<div class="card-img">
+		  <img src="V2.png" class="img" alt="ictorinox Swiss Army Women’s I.N.O.X.">
+		</div>
+		<div class="card-title">Victorinox Swiss Army Women’s I.N.O.X.</div>
+		<div class="card-subtitle">Color: Navy Blue</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>27,333.87</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('Victorinox Swiss Army Women’s I.N.O.X.', 'Color: Navy Blue', '₱27,333.87')" data-name="Victorinox Swiss Army Women’s I.N.O.X." data-price="₱27,333.87">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+
+	  <div class="card">
+		<div class="card-img">
+		  <img src="V3.png" class="img" alt="ictorinox Swiss Army Women’s I.N.O.X.">
+		</div>
+		<div class="card-title">Victorinox Swiss Army Women’s I.N.O.X.</div>
+		<div class="card-subtitle">Color: Grey</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>27,333.87</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('Victorinox Swiss Army Women’s I.N.O.X.', 'Color: Grey', '₱27,333.87')" data-name="Victorinox Swiss Army Women’s I.N.O.X." data-price="₱27,333.87">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	</div> <br><br><br>
+	<hr>
+	  <h1 id="M"><center>TechnoMarine: Cruise Medusa</center></h1>
+	<div class="product-container">
+	  <div class="card">
+		<div class="card-img">
+		  <img src="M1.png" class="img" alt="TechnoMarine: Cruise Medusa">
+		</div>
+		<div class="card-title">TechnoMarine: Cruise Medusa</div>
+		<div class="card-subtitle">Color: Rose Gold</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>11,991</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TechnoMarine: Cruise Medusa', 'Color: Rose Gold', '₱11,991')" data-name="TechnoMarine: Cruise Medusa" data-price="₱11,991">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+		<div class="card">
+		<div class="card-img">
+		  <img src="M2.png" class="img" alt="TechnoMarine: Cruise Medusa">
+		</div>
+		<div class="card-title">TechnoMarine: Cruise Medusa</div>
+		<div class="card-subtitle">Color: Black</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>11,991</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TechnoMarine: Cruise Medusa', 'Black', '₱11,991')" data-name="TechnoMarine: Cruise Medusa" data-price="₱11,991">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-img">
+		  <img src="M3.png" class="img" alt="TechnoMarine: Cruise Medusa">
+		</div>
+		<div class="card-title">TechnoMarine: Cruise Medusa</div>
+		<div class="card-subtitle">Color: Silver</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>11,991</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TechnoMarine: Cruise Medusa', 'Color: Silver', '₱11,991')" data-name="TechnoMarine: Cruise Medusa" data-price="₱11,991">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	</div> <br><br><br>
+	<hr>
+	  <h1 id="A"><center>Apple Watch Ultra 2</center></h1>
+	<div class="product-container">
+	  <div class="card">
+		<div class="card-img">
+		  <img src="A1.png" class="img" alt="Apple Watch Ultra 2">
+		</div>
+		<div class="card-title">Apple Watch Ultra 2</div>
+		<div class="card-subtitle">Color: Cream</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>54,990.00</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('Apple Watch Ultra 2', 'Color: Cream', '₱54,990.00')" data-name="Apple Watch Ultra 2" data-price="₱54,990.00">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-img">
+		  <img src="A2.png" class="img" alt="Apple Watch Ultra 2">
+		</div>
+		<div class="card-title">Apple Watch Ultra 2</div>
+		<div class="card-subtitle">Color: Blue</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>54,990.00</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('Apple Watch Ultra 2', 'Color: Blue', '₱54,990.00')" data-name="Apple Watch Ultra 2" data-price="₱54,990.00">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+		<div class="card">
+		<div class="card-img">
+		  <img src="A3.png" class="img" alt="Apple Watch Ultra 2">
+		</div>
+		<div class="card-title">Apple Watch Ultra 2</div>
+		<div class="card-subtitle">Color: Orange</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>54,990.00</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('Apple Watch Ultra 2', 'Color: Orange', '₱54,990.00')" data-name="Apple Watch Ultra 2" data-price="₱54,990.00">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	</div> <br><br><br>
+	<hr>
+	  <h1 id="T"><center>TAG Heuer Formula 1</center></h1>
+	<div class="product-container">
+	  <div class="card">
+		<div class="card-img">
+		  <img src="T4.png" class="img" alt="TAG Heuer Formula 1">
+		</div>
+		<div class="card-title">TAG Heuer Formula 1</div>
+		<div class="card-subtitle">Color: Silver</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>81,134.02</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TAG Heuer Formula 1', 'Color: Silver', '₱81,134.02')" data-name="TAG Heuer Formula 1" data-price="₱81,134.02">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-img">
+		  <img src="T2.png" class="img" alt="TAG Heuer Formula 1">
+		</div>
+		<div class="card-title">TAG Heuer Formula 1</div>
+		<div class="card-subtitle">Color: Black</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>81,134.02</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TAG Heuer Formula 1', 'Color: Black', '₱81,134.02')" data-name="TAG Heuer Formula 1" data-price="₱81,134.02">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+	  <div class="card">
+		<div class="card-img">
+		  <img src="T3.png" class="img" alt="TAG Heuer Formula 1">
+		</div>
+		<div class="card-title">TAG Heuer Formula 1</div>
+		<div class="card-subtitle">Color: Blue</div>
+		<hr class="card-divider">
+		<div class="card-footer">
+		  <div class="card-price"><span>₱</span>81,134.02</div>
+			<button class="button add-to-cart" type="button" onclick="addItemToSidebar('TAG Heuer Formula 1', 'Color: Blue', '₱81,134.02')" data-name="TAG Heuer Formula 1" data-price="₱81,134.02">
+				<span class="button__text">Add Item</span>
+				<span class="button__icon"><svg class="svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></span>
+			</button>
+		  <input type="number" class="quantity-input" value="1" min="1">
+		</div>
+	  </div>
+</div>
+
+	<footer>
+        <div class="fcontainer">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: aquawear@gmail.com</p>
+                <p>Phone:+121 56556 565556</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                 <ul class="list">
+                    <li><a href="home.html">Home</a></li><br>
+                    <li><a href="aboutUs.html">About</a></li><br>
+                    <li><a href="product.html">Product</a></li><br>
+                    <li><a href="contactUs.html">Contact</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+				<li><a href="#"><img src="fb.png" alt="Facebook" i class="fab fa-facebook"></a></li>
+				<li><a href="#"><img src="twt.png" alt="Twitter" i class="fab fa-twitter"></a></li>
+				<li><a href="#"><img src="ig.png" alt="Instagram" i class="fab fa-instagram"></a></li>
+				<li><a href="#"><img src="ld.png" alt="Linkedin" i class="fab fa-linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Aqua Wear. All rights reserved.</p>
+        </div>
+	</footer>
+	
+	<script src="p.js"></script>
+</body>
+</html>
+

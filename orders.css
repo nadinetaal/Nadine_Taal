@@ -1,0 +1,125 @@
+body {
+    background-image: url(thanks.jpg);	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 100px;
+    font-size: 14px;
+	padding-bottom: 10px;
+}
+
+/* Customer information styles */
+.customer-info {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: calc(80% - 20px);
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.customer-info h2 {
+    margin-bottom: 15px;
+	color: #d692a2;
+}
+
+.customer-info label {
+    margin-bottom: 8px;
+}
+
+.customer-info input,
+.customer-info select {
+    padding: 8px;
+    border-radius: 0.5rem;
+    border: 1px solid #dcdcdc;
+    width: 100%; /* Adjust the width as needed */
+    margin-bottom: -0.9px; 
+}
+.customer-info form {
+    display: flex;
+    flex-direction: column;
+}
+.customer-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #d692a2;;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	align-self: flex-end; /* Align the button to the right */
+    margin-top: 13px; /* Add margin-top for spacing */
+}
+
+.customer-info button:hover {
+    background-color: #e6d0d0;
+}
+
+/* Order summary styles */
+.order-summary {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+	padding-bottom: 40px;
+	margin-left: -4x;
+}
+
+.order-summary h2 {
+    margin-bottom: 15px;
+	color: #d692a2;
+}
+
+.order-summary .order-items p {
+    margin: 5px 0;
+}
+
+.order-summary .cart-total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #5d5357;
+}
+
+.order-summary .cart-total{
+	margin-top: 40px;
+}
+
+/* Continue shopping button */
+.custom-button {
+    display: flex;
+    height: 3em;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6d0d0; /* Updated background color */
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    margin-top: auto;
+}
+
+.custom-button > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.custom-button:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}

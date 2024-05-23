@@ -1,0 +1,513 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    color:white;
+    height:100vh;
+    background-image: url(pastel.gif);	
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar{
+	font-family: calibri; 
+	padding-right: 18px;
+	padding-left: 18px;
+}
+.navdiv{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+img{
+	display: flex;
+	height: 110px;
+    width: 150px;
+	padding-left: 40px;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+li a{
+	color: #5d5357;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 40px;
+	margin-left: 40px;
+	text-decoration: none;
+}
+li a:hover{
+	color: rgb(217,189,186)
+}
+h1{
+	color: black;
+	font-family: sans-serif; 
+	font-size: 60px;
+	margin-top:80px;
+    margin-left:50px;
+    margin-bottom: -1px;
+}
+h2{
+	color: black;
+	font-family: calibri; 
+	font-size: 13.5px;
+	letter-spacing: 1px;
+	margin-top:30px;
+	margin-left:55px;
+    margin-bottom:-1px;
+}
+button{
+	background: rgb(217,189,186,0.5);
+	border: 0;
+	border-radius:5px;
+	cursor: pointer;
+	outline: none;
+	padding: 15px 35px;
+	margin-top: 30px;
+	margin-left:55px;
+    margin-right:5px;
+    margin-bottom:-10px;
+	letter-spacing: 1px
+	
+}
+.button:hover{
+	text-decoration: none;
+	color: black;
+	transition: .3s ease;
+	background-color: rgb(157, 134, 134,0.5);
+}
+.img_img{
+	display: block;
+	float: right;
+	height: 280px;
+	width: 490px;
+	margin-top: -10px;
+    margin-right:55px;
+	color:black;
+}
+hr{
+	margin-top: 150px;
+	width:100%;
+	border-width: 0px; 
+	margin-bottom: 1%;
+}
+/* Explore Section */
+.explore {
+    text-align: center;
+    padding: 20px;
+}
+
+.explore h1 {
+    color: black;
+    margin: 0;
+    font-family: copperplate;
+}
+
+.explore p {
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #5d5357;
+    padding: 50px;
+    margin: 0;
+	margin-right: -10px;
+	margin-top: -70px;
+	margin-bottom: 80px;
+	background: rgba(233, 222, 221, 0.5);
+}
+
+.explore p span {
+    color: #cf9893;
+	font-weight: bold;
+}
+
+/* Product Section */
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.text, .text1 {
+    display: flex;
+    align-items: center;
+    color: #5d5357;
+    background-color: rgba(221, 186, 182, 0.5);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex: 1;
+    margin: 0 10px; /* Add margin between items */
+}
+
+.text1 {
+    background-color: #ddbab6;
+    flex-direction: row-reverse; /* Image on the right */
+}
+
+.text h2, .text1 h2 {
+    font-size: 20px; /* Change h2 font size */
+	align-items: center;
+}
+
+.text p, .text1 p {
+    font-size: 14.5px; /* Change p font size */
+	text-align: justify;
+}
+
+.text:hover .image img, .text1:hover .image img {
+    transform: scale(1.1);
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.image img {
+    flex: 0 0 auto; /* Do not grow or shrink */
+    margin-left: 20px; /* Adjust spacing between text and image */
+    margin-right: 20px;
+    height: 200px;
+    width: 150px;
+}
+
+.content {
+    flex: 1; /* Allow text to grow and shrink */
+}
+.clip-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.clip {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.clip video {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+	width: 10%;
+	height: -11%;
+}
+
+.image-container img {
+    width: 95%;
+    height: auto;
+	margin-left: -5%;
+}
+
+.search {
+  --input-line: #5d5357;
+  --input-text-color: #e5dfdf;
+  --input-text-hover-color: transparent;
+  --input-border-color: #e5dfdf;
+  --input-border-hover-color: #999999;
+  --input-bg-color: #5d5357;
+  --search-max-width: 200px; 
+  --search-min-width: 100px; 
+  --border-radius: 5px;
+  --transition-cubic-bezier: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-box {
+  max-width: var(--search-max-width);
+  min-width: var(--search-min-width);
+  height: 18px; /* Adjusted */
+  border: 1px solid var(#ddbab6);
+  border-radius: var(--border-radius);
+  padding: 5px 10px; /* Adjusted */
+  background: #ddbab6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Adjusted */
+  transition: var(--transition-cubic-bezier);
+}
+
+.search-box:hover {
+  border-color: var(--input-border-hover-color);
+}
+
+/*Section input*/
+.search-field {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -5px;
+  border: 0;
+}
+
+.input {
+  width: calc(100% - 29px);
+  height: 100%;
+  border: 0;
+  border-color: transparent;
+  font-size: 1rem;
+  padding-right: 0px;
+  color: var(--input-line);
+  background: #ddbab6;
+  border-right: 2px solid var(--input-border-color);
+  outline: none;
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-moz-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input::-ms-input-placeholder {
+  color: var(--input-text-color);
+}
+
+.input:focus::-webkit-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-moz-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+.input:focus::-ms-input-placeholder {
+  color: var(--input-text-hover-color);
+}
+
+/*Search button*/
+.search-box-icon {
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+}
+.search-box-icon:hover {
+  background: #5d5357;
+}
+
+.btn-icon-content {
+  width: 52px;
+  height: 35px;
+  top: -6px;
+  right: -21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom-right-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  transition: var(--transition-cubic-bezier);
+  opacity: .4;
+}
+
+.btn-icon-content:hover {
+  opacity: .8;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+
+.uiverse-container {
+    display: flex;
+    justify-content: flex-end; /* Adjust this property to change the horizontal alignment */
+    margin: 20px; /* Optional: Adjust the margin for the container */
+}
+
+.uiverse {
+    position: relative;
+    background: rgb(217,189,186);
+    color: #5d5357;
+    padding: 8px; /* Adjusted padding for smaller size */
+    border-radius: 8px; /* Smaller border radius */
+    width: 80px; /* Smaller width */
+    height: 20px; /* Smaller height */
+    font-size: 13px; /* Smaller font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    margin-bottom: 200px;
+	margin-left: 54%;
+	margin-top: -8%;
+}
+
+.uiverse a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    font-family: Verdana, sans-serif;
+}
+
+.tooltip {
+    position: absolute;
+    top: -30px; /* Adjusted top position for tooltip */
+    right: 0; /* Align tooltip to the right */
+    font-size: 12px; /* Smaller font size for tooltip */
+    background: #ffffff;
+    color: #ffffff;
+    padding: 4px 6px; /* Adjusted padding for tooltip */
+    border-radius: 4px; /* Smaller border radius for tooltip */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Adjusted box shadow for tooltip */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #ffffff;
+    bottom: -2px; /* Adjusted bottom position for tooltip arrow */
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+    top: -35px; /* Adjusted top position for tooltip on hover */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+    background: rgba(157, 134, 134); /* Set a solid background color */
+    color: #ffffff;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+/* CART */
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -6px; 
+    left: 15px;
+    background-color: #ddbab6;
+    color: #5d5357;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* FOOTER */
+footer{
+    background: #343434;
+    padding-top: 50px;
+	margin-top: 10%;
+}
+.fcontainer{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;		
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #cd8585;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons img{
+    text-align: center;
+    padding: 7px;
+}
+.bottom-bar{
+    background: #9d8686;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+.list li a {
+    color: white; /* Add this line to change the link color to white */
+    text-decoration: none; /* Optional: remove underline from links */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.list li a:hover {
+    color: #cd8585; /* Optional: change link color on hover */
+}

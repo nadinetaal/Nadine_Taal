@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	min-height: 100vh;
+	background-image: url(try2.jpg);
+	background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	background: rgba(221, 186, 182, 0.6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	backdrop-filter: blur(10px); 
+	border-bottom: 2px solid rgba(255, 252, 246, .1);
+}
+.header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 252, 246, .4), transparent);
+	transition: .8s;
+}
+.header:hover::before {
+	left: 100%;
+}
+.logo img {
+	height: 40px;
+    width: 180px;
+	padding-top: 7px;
+	cursor: default;
+}
+.nav-link {
+  font-size: 17px;
+  color: #5d5357;
+  text-shadow: 0.4px 0.4px 0.4px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  margin-right: 20px; 
+  text-decoration: none; 
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #f4e3e9;
+}
+.nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+.nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #f4e3e9;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+footer {
+    position: fixed; /* or position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ddbab6; /* Example background color */
+    padding: 10px; /* Example padding */
+    text-align: center; /* Align text to the center */
+}
+footer p {
+    margin: 0; /* Remove default margin for the paragraph */
+	font-family: Calibri;
+    font-size: 12px; 
+    color: #5d5357 ; 
+}
+.content {
+    display: flex;
+    justify-content: space-between; /* Places the items at each end */
+    align-items: flex-start; /* Aligns items vertically */
+    padding: 20px 100px; /* Adjust padding as needed */
+    margin-top: 325px; /* Adjust margin-top as needed */
+    position: fixed; /* Fixes the content */
+    top: 0; /* Keeps the content at the top */
+    width: 100%; /* Sets the width to full */
+    color: #ffffff; /* Text color */
+}
+.text-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items at the start of the container */
+}
+h4 {
+	font-weight: bold;
+    font-size: 40px;
+    margin: 0; /* Remove default margin */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Horizontal shadow offset, vertical shadow offset, blur radius, shadow color */
+}
+#audioControls {
+    display: flex;
+    align-items: center;
+}
+button, input {
+    margin-right: 5px;
+}
+.wave-menu {
+    border: 2px solid #ddbab6; /* reduce border thickness */
+    border-radius: 20px; /* adjust border-radius for a smaller container */
+    width: 85px; /* reduce width */
+    height: 15px; /* reduce height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: ease 0.2s;
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+}
+
+.wave-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.wave-menu li {
+    height: 10px; /* reduce the height of the wave lines */
+    width: 2px; /* reduce the width of the wave lines */
+    margin: 0 3px;
+    border-radius: 10px;
+    background: #ddbab6;
+    padding: 0;
+    animation-name: wave1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease 0.2s;
+}
+
+.wave-menu:hover li {
+	background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+}
+
+.wave-menu:hover {
+	background: rgba(221, 186, 182);
+}
+
+.wave-menu li:nth-child(2) {
+    animation-name: wave2;
+    animation-delay: 0.2s;
+}
+
+.wave-menu li:nth-child(3) {
+    animation-name: wave3;
+    animation-delay: 0.23s;
+    animation-duration: 0.4s;
+}
+
+.wave-menu li:nth-child(4) {
+    animation-name: wave4;
+    animation-delay: 0.1s;
+    animation-duration: 0.3s;
+}
+
+.wave-menu li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.wave-menu li:nth-child(6) {
+    animation-name: wave2;
+    animation-duration: 0.5s;
+}
+
+.wave-menu li:nth-child(8) {
+    animation-name: wave4;
+    animation-delay: 0.4s;
+    animation-duration: 0.25s;
+}
+
+.wave-menu li:nth-child(9) {
+    animation-name: wave3;
+    animation-delay: 0.15s;
+}
+
+@keyframes wave1 {
+    from {
+        transform: scaleY(1);
+    }
+
+    to {
+        transform: scaleY(0.5);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: scaleY(0.3);
+    }
+
+    to {
+        transform: scaleY(0.6);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: scaleY(0.6);
+    }
+
+    to {
+        transform: scaleY(0.8);
+    }
+}
+
+@keyframes wave4 {
+    from {
+        transform: scaleY(0.2);
+    }
+
+    to {
+        transform: scaleY(0.5);
+    }
+}
